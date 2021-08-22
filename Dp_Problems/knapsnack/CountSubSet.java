@@ -44,7 +44,7 @@ public class CountSubSet {
 		int set[] = {1,2,4,1,2};
 	System.out.print("Is available" +getSubSet(n,set));
 	System.out.print("\nrecursion"+getSubSet(n,set,0));
-
+  
 		
 
 	}

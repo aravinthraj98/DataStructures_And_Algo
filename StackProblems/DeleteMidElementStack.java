@@ -13,6 +13,7 @@ public class DeleteMidElementStack {
             		S.pop();
             		return;
             	}
+            	
             	int temp = S.pop();
             	removeMid(S,mid-1);
             	S.push(temp);

@@ -18,6 +18,7 @@ public class HistogramArray {
 	static void NSL(long hist[],long n,long res[]) {
 		Stack<Integer> s= new Stack<>();
 		for(int i=0;i<n;i++) {
+			
 			while(!s.isEmpty() && hist[s.peek()]>=hist[i]) {
 				s.pop();
 			}

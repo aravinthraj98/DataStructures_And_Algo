@@ -30,7 +30,7 @@ public class HowSum {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int sum=8;
-		int arr[]= {3,3};
+		int arr[]= {4,3,2};
 		System.out.print("is Sum:"+getSum(sum,arr,""));
 
 	}

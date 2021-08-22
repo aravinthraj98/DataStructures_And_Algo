@@ -16,6 +16,7 @@ public class CelebrityProb {
 				S.push(i);
 			}
 		}
+		
 		if(S.isEmpty())return;
 		int temp =S.pop();
 		for(int i=0;i<M.length;i++) {

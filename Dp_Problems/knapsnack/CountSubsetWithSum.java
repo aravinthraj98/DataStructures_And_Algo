@@ -13,8 +13,8 @@ public class CountSubsetWithSum {
     	  return tab[tab.length-1];
       }
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		int sum =2;
+		// TODO A3to-generated method stub
+		int sum =3;
 		int arr[]  = {1,2,2,3};
 		int tab[] = new int[sum+1];
 		tab[0]=1;
