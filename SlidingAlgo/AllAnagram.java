@@ -1,5 +1,5 @@
 package SlidingAlgo;
-
+//All anagram
 public class AllAnagram {
 	static void findAnagram(String all,String key) {
 		int k=key.length();
@@ -37,8 +37,8 @@ public class AllAnagram {
 		// TODO Auto-generated method stub
 //		String all= "aaaaaa";
 //		String key = "aaa";
-		String all = "abab";
-		String key = "ab";
+		String all = "acab";
+		String key = "abc";
 		findAnagram(all,key);
 
 	}

@@ -34,13 +34,45 @@ public class JogOrWalk {
 		}
 		return dp[n];
 	}
+	static void getFactorial(int []fact) {
+		int temp=1;
+		for(int i=1;i<fact.length;i++) {
+			fact[i]=temp*i;
+			temp=fact[i];
+		}
+	}
+	static int getPermutation(int n) {
+	    int[] fact = new int[n+1];
+	    fact[0]=1;
+	    getFactorial(fact);
+	    int possible =n/2;
+	    int sum=0;
+	    int temp=n;
+	    for(int i=0;i<=possible;i++) {
+	    	if(i==0) {
+	    		sum+=1;
+	    		continue;
+	    	}
+	    	else {
+//	    		temp=n-i;
+	    		temp=i+(n-(2*i));
+	    	}
+	    	System.out.println(i+" "+fact[temp]+" "+fact[temp-i]+" "+fact[i]);
+	    	sum+=fact[temp]/(fact[i]*fact[temp-i]);
+//	    	sum+=fact[temp]/(fact[temp-i]*fact[i]);
+	    }
+	    return sum;
+	    
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-   int n=20;//11111,1211,1121,1112,2111,221,122,212
+   int n=8;//11111,1211,1121,1112,2111,221,122,212
 //    System.out.println(getWays(n));
     System.out.println(GetWaysMemoise(n,new HashMap<Integer,Integer>()));
     System.out.println(GetWaysTab(n));
+    System.out.print("getPermutation"+getPermutation(n));
+    
 	}
 
 }

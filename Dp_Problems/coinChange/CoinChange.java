@@ -4,8 +4,12 @@ import java.util.Arrays;
 
 public class CoinChange {
 	static int getCountRec(int coins[],int[] Tab,int W,int i) {//Tab array doesn't need in argument
+		if(W==0) {
+			
+			return 1;
+		}
 		if(i>=coins.length || coins[i]==0) return 0;
-		if(W==0)return 1;
+		
 		if(W<0) return 0;
 		return getCountRec(coins,Tab,W-coins[i],i)+getCountRec(coins,Tab,W,i+1);
 	}
@@ -28,8 +32,8 @@ public class CoinChange {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int W=4;
-		int [] coins = {1,2,3};
+		int W=8;
+		int [] coins = {1,2,3};//111,12,3
 		int Tab[] = new int[W+1];
 		Tab[0]=1;
 		getCountTab(coins,Tab,W);
