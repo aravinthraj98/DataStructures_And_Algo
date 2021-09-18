@@ -25,7 +25,7 @@ public class MergeSort {
 		for(int m=0;m<n2;m++) {
 			R[m]=A[mid+1+m];
 		}
-		System.out.println(i+"<"+mid+"--"+j+"<"+ub);
+//		System.out.println(i+"<"+mid+"--"+j+"<"+ub);
 		while(i<n1 && j<n2) {
 			if(L[i]>=R[j]) {
 				A[k]=R[j];

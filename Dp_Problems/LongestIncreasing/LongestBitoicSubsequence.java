@@ -31,7 +31,7 @@ public class LongestBitoicSubsequence {
    		 result = Math.max(result, dp[i]);
    		 
    	  }
-   	  System.out.println("Not"+result);
+   	
    	 return dp;
      }
 	    static int[]  GetCountOfLIS(int[] arr,int n) {
@@ -51,13 +51,14 @@ public class LongestBitoicSubsequence {
 	  		 result = Math.max(result, dp[i]);
 	  		 
 	  	  }
-	  	  System.out.println(result);
+	 
 	  	 return dp;
 	    }
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 //		int[] arr = {50, 3, 10, 7, 40, 80};
-		int arr[] = {1, 11, 2, 10, 4, 5, 2, 1};
+//		int arr[] = {1, 11, 2, 10, 4, 5, 2, 1};
+		int arr[] = {10, 22, 9, 33, 21, 50, 41, 60, 80, 3,99};
 		int n = arr.length;
 		System.out.print(GetCountOfLBS(arr,n));
 		

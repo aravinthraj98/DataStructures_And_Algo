@@ -13,7 +13,7 @@ public class BubbleSort {
 				}
 				
 			}
-//			System.out.print("break");
+	System.out.print("break");
 			if(flag==0)break;
 			
 		}
@@ -21,7 +21,7 @@ public class BubbleSort {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int arr[] = {7,4,9,2,1};
+		int arr[] = {7,1,2,3,5};
 //		int arr[]= {1,2,3,4,5};
 		
 		bubbleIt(arr);
