@@ -30,7 +30,7 @@ public class HistogramArray {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		long hist[] = { 6, 2, 5, 4, 5, 1, 6 };
+		long hist[] = { 1,2,3,4,2,6};
 		long nsmallL[] = new long[hist.length];
 		long nsmallR[] = new long[hist.length];
 		NSR(hist,hist.length,nsmallR);

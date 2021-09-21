@@ -24,13 +24,13 @@ public class CheckPalindromeInLinkedList {
 		Node prev=null;
 		Node following;
 		
-		while(count<half) {
+		while(count<half) {   
 			 following =temp.next;
-			temp.next=prev;
-			prev=temp;
+			 temp.next=prev;
+			 prev=temp;
 			
 			
-			temp=following;
+			 temp=following;
 			
 			
 			count++;
